@@ -1,27 +1,37 @@
-VITE
+/VITE
 vite is used to setsup the react 
 runs the dev server
 converts react/jsx code into html,css,and java since browser dont understand direct react code
 
-JSX
+/JSX
 html like syntax written directly inside javascript
 
-COMPONENT 
+/COMPONENT 
 reusable ,self-contained chunk of UI
 
 cd client 
 npm create vite@latest . -- --template react
 
-src
+/src
 /main.jsx
 main.jsx which is a entry point
 bridge between plain html and react app
 
-app.jsx
+/app.jsx
 which holds the main/root component 
 
 App and index .css files 
 used for styling 
 
-assets
+/assets
 for logos and images we use this 
+
+/components structure 
+function APP(){
+    return(
+        <> lot of jsx file 
+        </>
+    )
+}
+export default App
+main.jsx can import app.jsx
