@@ -1,0 +1,27 @@
+VITE
+vite is used to setsup the react 
+runs the dev server
+converts react/jsx code into html,css,and java since browser dont understand direct react code
+
+JSX
+html like syntax written directly inside javascript
+
+COMPONENT 
+reusable ,self-contained chunk of UI
+
+cd client 
+npm create vite@latest . -- --template react
+
+src
+/main.jsx
+main.jsx which is a entry point
+bridge between plain html and react app
+
+app.jsx
+which holds the main/root component 
+
+App and index .css files 
+used for styling 
+
+assets
+for logos and images we use this 
