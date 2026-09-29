@@ -1,28 +1,26 @@
 import CareerCard from "./components/CareerCard";
 import "./App.css";
+import { careers } from "./careersData";
+
 function App() {
+  const bigCareers = careers.filter((career) => career.skillCount >= 8);
+console.log("careers count",careers.length);
   return (
     <>
-    <h1>Personal Learning Path Generator</h1>
-    <div className="career-list">
-    <CareerCard
-     title="Java Backend Developer" 
-      description="Java Backend Developer offers backend contents"
-      skillCount={9} 
-      />
-      <CareerCard
-       title="Java frontend  Developer" 
-     description="Java frontend Developer offers backend contents" 
-       
-      />
-      <CareerCard 
-      title="Java fullstack Developer" 
-    decription="Java fullstack Developer offers backend contents"
-       skillCount={10} 
-       />
-       </div>
-  </>
-  )
+      <h1>Personal Learning Path Generator</h1>
+
+      <div className="career-list">
+        {careers.map((career) => (
+          <CareerCard
+            key={career.id}
+            title={career.title}
+            description={career.description}
+            skillCount={career.skillCount}
+          />
+        ))}
+      </div>
+    </>
+  );
 }
 
-export default App
+export default App;
